@@ -1,0 +1,82 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* start pootstrab */
+
+.row {
+    text-align: center;
+}
+
+.row div {
+    background-color: #333;
+    color: white;
+    outline: white 1px solid;
+}
+
+h4 {
+    text-align: center;
+}
+
+/* end pootstrab */
+
+
+
+/* start normal */
+
+.normal{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(25%,1fr));
+    text-align: center;
+}
+.normal div {
+    background-color: #333;
+    color: white;
+    outline: white 1px solid;
+    
+
+}
+
+/* end normal */
+
+
+/* start responsive */
+
+@media (max-width:1366px) {
+    .normal{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(25%,1fr));
+        text-align: center;
+    }
+}
+
+
+@media (max-width:992px) {
+    .normal{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(33.3%,1fr));
+        text-align: center;
+    }
+}
+
+
+@media (max-width:750px) {
+    .normal{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+        text-align: center;
+    }
+}
+
+
+@media (max-width:600px) {
+    .normal{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(100%,1fr));
+        text-align: center;
+    }
+}
+
+/* end responsive */
